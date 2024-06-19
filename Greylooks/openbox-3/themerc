@@ -25,10 +25,6 @@ window.*.handle.bg.shadow:                          8
 window.*.handle.bg.color:                           #dbd7d0
 window.*.grip.bg:                                   parentrelative
 
-!! Highlights of raised backgound of window titlebars
-window.*.title.bg.highlight:                        64
-window.*.title.bg.shadow:                           8
-
 !}}}
 !{{{ Active window
 
@@ -95,7 +91,6 @@ window.inactive.button.close.hover.image.color:   #f2594b
 
 !{{{ Menus
 
-
 !! Geometry
 menu.border.width:                                  1
 menu.overlap.x:                                     -3
@@ -124,9 +119,6 @@ menu.items.active.bg:                               flat gradient vertical borde
 menu.items.active.bg.color:                         #828388
 menu.items.active.bg.colorTo:                       #737478
 menu.items.active.bg.border.color:                  #4c4c4e
-!!menu.items.active.bg.color:                         #7f909d
-!!menu.items.active.bg.colorTo:                       #6f7f8c
-!!menu.items.active.bg.border.color:                  #4c5359
 menu.items.active.text.color:                       #f5f3ef
 menu.bullet.selected.image.color:                   #f5f3ef
 
@@ -140,8 +132,6 @@ menu.items.active.disabled.text.color:              #adaeb0
 
 !! OSD background
 osd.bg:                                             flat gradient vertical
-!!osd.bg.color:                                       #dbd7d0
-!!osd.bg.colorTo:                                     #c5c1bb
 osd.bg.color:                                       #dbd7d0
 osd.bg.colorTo:                                     #cbc5bb
 osd.border.color:                                   #75787b
@@ -192,12 +182,9 @@ osd.button.pressed.bg.colorTo:                      #c3beb4
 osd.hilight.bg:                                     flat gradient vertical
 osd.hilight.bg.color:                               #828388
 osd.hilight.bg.colorTo:                             #737478
-!!osd.hilight.bg.color:                               #7c8d96
-!!osd.hilight.bg.colorTo:                             #6d7c85
 
 !! Unhighlighted background
 osd.unhilight.bg:                                   flat solid
-!osd.unhilight.bg.color:                             #f0ede7
 osd.unhilight.bg.color:                             #e8e6e2
 
 !}}}
