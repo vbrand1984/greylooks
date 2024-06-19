@@ -1,6 +1,6 @@
 # Greylooks GTK2/3, Openbox and Metacity theme
 ## Overview
-The theme is based on Clearlooks, Clearlooks-Phenix and TraditionalOk from the [mate-themes](https://github.com/mate-desktop/mate-themes) package with certain excerpts from the [Mint-X](https://github.com/linuxmint/mint-themes) theme. Some bugs of the original theme were fixed here. The colors are carefully picked to be easy on eyes and generally eye-candy. Openbox theme in Greylooks is designed to be consistent with the corresponding GTK theme. The theme is overall Gruvbox- and Redshift-friendly.
+The theme is based on Clearlooks, Clearlooks-Phenix and TraditionalOk from the [mate-themes](https://github.com/mate-desktop/mate-themes) package with certain excerpts from the [Mint-X](https://github.com/linuxmint/mint-themes) theme. Some [bugs](../assets/screenshots/traditionalok-greylooks-comparison.png) of the original theme were fixed here. The colors are carefully picked to be easy on eyes and generally eye-candy. Openbox theme in Greylooks is designed to be consistent with the corresponding GTK theme. The theme is overall Gruvbox- and Redshift-friendly.
 ## GTK3 theme
 ![Screenshot: Greylooks Openbox theme](../assets/screenshots/greylooks-gtk3.png?raw=true "Screenshot: Greylooks Openbox theme")
 
