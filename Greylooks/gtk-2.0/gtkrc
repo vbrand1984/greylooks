@@ -1,7 +1,7 @@
 
 # Please keep this gtkrc in sync with the other ones from Clearlooks based themes.
 
-gtk-color-scheme = "base_color:#f0ede7\nfg_color:#080808\ntooltip_fg_color:#080808\nselected_bg_color:#828388\nselected_fg_color:#fefdfa\ntext_color:#080808\nbg_color:#dbd7d0\ntooltip_bg_color:#f5edd6\nlink_color:#123955\nvisited_link_color:#005784"
+gtk-color-scheme = "base_color:#f0ede7\nfg_color:#080808\ntooltip_fg_color:#080808\nselected_bg_color:#828388\nselected_fg_color:#f5f3ef\ntext_color:#080808\nbg_color:#dbd7d0\ntooltip_bg_color:#f3e5ab\nlink_color:#123955\nvisited_link_color:#005784"
 
 style "default" {
 	xthickness = 1
