@@ -1,9 +1,26 @@
-!! Greylooks
+! vim: ft=ob3:fm=marker
+
+!! Greylooks theme for Openbox3 window manager
+
+!! The themerc file is created by Victor Brand
+!! The assets are borrowed mostly from BunsenLabs:
+!! https://github.com/BunsenLabs/bunsen-themes
+!! and from the Bear2 theme.
+!! This product is distributed under the terms of the GPL v. 2.0 license:
+!! https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+!! Feel free, comrades
+
+!! Check out the newest version of this theme:
+!! https://github.com/vbrand1984/greylooks-openbox
+
+!! Vim syntax plugin for openbox themes:
+!! https://github.com/vbrand1984/ob3-vim-syntax
+
 
 !! Menu and window label text justification
 *.text.justify: center
 
-!{{{ General window settings
+!! {{{ General window settings
 
 !! Window border
 border.width:                                       1
@@ -25,10 +42,9 @@ window.*.handle.bg.shadow:                          8
 window.*.handle.bg.color:                           #dbd7d0
 window.*.grip.bg:                                   parentrelative
 
-!}}}
-!{{{ Active window
+!! }}}
+!! {{{ Active window title
 
-!! Active window title
 window.active.title.bg:                             flat gradient vertical
 window.active.title.bg.color:                       #ddd9d3
 window.active.title.bg.colorTo:                     #dbd7d0
@@ -38,40 +54,33 @@ window.active.label.bg:                             parentrelative
 window.active.label.text.color:                     #1a1b1c
 window.active.label.text.font:                      shadow=y:shadowoffset=1:shadowtint=-70
 
+!! }}}
+!! {{{ Active window buttons
+
 !! Active window button background
 window.active.button.unpressed.bg:                  parentrelative
 window.active.button.pressed.bg:                    parentrelative
 window.active.button.disabled.bg:                   parentrelative
 window.active.button.hover.bg:                      flat solid  
 window.active.button.hover.bg.color:                #828388
-!! Close button bg
-window.active.button.close.unpressed.bg:            flat solid
-window.active.button.close.unpressed.bg.color:      #cc6666
-window.active.button.close.hover.bg:                parentrelative
-
 !! Active window buttons colors
 window.active.button.unpressed.image.color:         #1a1b1c
 window.active.button.hover.image.color:             #f0eee4
 window.active.button.pressed.image.color:           #828388
 window.active.button.disabled.image.color:          #9c9d9b
-!! Close button color
-window.active.button.close.unpressed.image.color:   #f0eee4
-window.active.button.close.hover.image.color:       #af3a03
-window.active.button.close.pressed.image.color:     #af3a03
 
 !! Active window toggled buttons background
 window.active.button.toggled.unpressed.bg:          parentrelative
 window.active.button.toggled.pressed.bg:            parentrelative
 window.active.button.toggled.hover.bg:              flat solid
 window.active.button.toggled.hover.bg.color:        #828388
-
 !! Active toggled window buttons colors
 window.active.button.toggled.unpressed.image.color: #1a1b1c
 window.active.button.toggled.hover.image.color:     #f0eee4
 window.active.button.toggled.pressed.image.color:   #828388
 
-!}}}
-!{{{ Inactive window
+!! }}}
+!! {{{ Inactive window settings
 
 !! Inactive window title
 window.inactive.title.bg:                         flat solid
@@ -85,11 +94,9 @@ window.inactive.label.text.font:                  shadow=y:shadowoffset=1:shadow
 window.inactive.button.*.bg:                      parentrelative
 window.inactive.button.*.image.color:             #7e7d78
 
-window.inactive.button.close.hover.image.color:   #f2594b
+!! }}}
 
-!}}}
-
-!{{{ Menus
+!! {{{ Menus
 
 !! Geometry
 menu.border.width:                                  1
@@ -126,9 +133,9 @@ menu.bullet.selected.image.color:                   #f5f3ef
 menu.items.disabled.text.color:                     #8b8589
 menu.items.active.disabled.text.color:              #adaeb0
 
-!}}}
+!! }}}
 
-!{{{ General OSD settings
+!! {{{ General OSD settings
 
 !! OSD background
 osd.bg:                                             flat gradient vertical
@@ -145,10 +152,10 @@ osd.active.label.text.font:                         shadow=y:shadowoffset=1:shad
 
 !! OSD inactive label
 osd.inactive.label.text.color:                      #7e7d78
-osd.inactive.label.text.font:                       shadow=y:shadowoffset=1:shadowtint=-50
+osd.inactive.label.text.font:                       shadow=y:shadowoffset=1:shadowtint=-40
 
-!}}}
-!{{{ OSD Buttons
+!! }}}
+!! {{{ OSD buttons
 
 !! Text
 osd.button.*.box.color:                             #7c7e82
@@ -158,7 +165,7 @@ osd.button.*.text.font:                             shadow=n
 !! Button highlights
 osd.button.*.bg.highlight:                          16
 osd.button.*.bg.shadow:                             64
-menu.border.width:
+
 !! Unpressed button
 osd.button.unpressed.bg:                            raised gradient vertical 
 osd.button.unpressed.bg.color:                      #e2e1dd
@@ -175,8 +182,8 @@ osd.button.pressed.bg:                              sunken gradient vertical
 osd.button.pressed.bg.color:                        #b4b0a4
 osd.button.pressed.bg.colorTo:                      #c3beb4
 
-!}}}
-!{{{ Workspace switching dialog
+!! }}}
+!! {{{ Workspace switching dialog
 
 !! Highlighted background
 osd.hilight.bg:                                     flat gradient vertical
@@ -187,4 +194,4 @@ osd.hilight.bg.colorTo:                             #737478
 osd.unhilight.bg:                                   flat solid
 osd.unhilight.bg.color:                             #e8e6e2
 
-!}}}
+!! }}}
