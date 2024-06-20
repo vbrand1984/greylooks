@@ -10,3 +10,6 @@ The theme is based on good ol' Clearlooks, Clearlooks-Phenix and TraditionalOk f
 ## Usage
 Just install the theme into your `/usr/share/themes` (for systemwide installation) or `~/.local/share/themes` (for local install) directory.
 In order for the GTK2 theme to be working, it is necessary to install the `gtk-engines` or `gtk2-engines` package (depending on the distribution).
+
+## Licenses
+GTK and Metacity themes share the original LGPL v. 2.1 license of the [mate-themes](https://github.com/mate-desktop/mate-themes) package. Openbox theme is under the GPL v. 2.0 license.
