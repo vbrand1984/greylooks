@@ -1,20 +1,22 @@
-! vim: ft=ob3:fm=marker
+! vim: ft=ob3 fdm=marker
 
+!!
 !! Greylooks theme for Openbox3 window manager
-
+!!
 !! The themerc file is created by Victor Brand
 !! The assets are borrowed mostly from BunsenLabs:
 !! https://github.com/BunsenLabs/bunsen-themes
 !! and from the Bear2 theme.
 !! This product is distributed under the terms of the GPL v. 2.0 license:
 !! https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-!! Feel free, comrades
-
+!! Feel free, comrades!
+!!
 !! Check out the newest version of this theme:
 !! https://github.com/vbrand1984/greylooks-openbox
-
+!!
 !! Vim syntax plugin for openbox themes:
 !! https://github.com/vbrand1984/ob3-vim-syntax
+!!
 
 
 !! Menu and window label text justification
@@ -83,16 +85,17 @@ window.active.button.toggled.pressed.image.color:   #828388
 !! {{{ Inactive window settings
 
 !! Inactive window title
-window.inactive.title.bg:                         flat solid
-window.inactive.title.bg.color:                   #dbd7d0
-window.inactive.title.separator.color:            #dbd7d0
-window.inactive.label.bg:                         parentrelative
-window.inactive.label.text.color:                 #7e7d78
-window.inactive.label.text.font:                  shadow=y:shadowoffset=1:shadowtint=-50
+window.inactive.title.bg:                           flat solid
+window.inactive.title.bg.color:                     #dbd7d0
+window.inactive.title.separator.color:              #dbd7d0
+window.inactive.label.bg:                           parentrelative
+window.inactive.label.text.color:                   #7e7d78
+window.inactive.label.text.font:                    shadow=y:shadowoffset=1:shadowtint=-50
 
 !! Inactive window buttons
-window.inactive.button.*.bg:                      parentrelative
-window.inactive.button.*.image.color:             #7e7d78
+window.inactive.button.*.bg:                        parentrelative
+window.inactive.button.*.image.color:               #7e7d78
+window.inactive.button.disabled.image.color:        #9c9d9b
 
 !! }}}
 

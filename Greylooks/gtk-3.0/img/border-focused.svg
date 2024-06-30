@@ -3,7 +3,7 @@
 
 <svg
    sodipodi:docname="border-focused.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    version="1.1"
    id="svg33222"
    height="16px"
@@ -34,17 +34,17 @@
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"
      inkscape:snap-nodes="false"
-     inkscape:window-maximized="1"
-     inkscape:window-y="26"
-     inkscape:window-x="0"
-     inkscape:window-height="1033"
-     inkscape:window-width="1920"
+     inkscape:window-maximized="0"
+     inkscape:window-y="28"
+     inkscape:window-x="960"
+     inkscape:window-height="1021"
+     inkscape:window-width="958"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
      showgrid="false"
      inkscape:current-layer="layer1"
-     inkscape:cy="9.4575532"
-     inkscape:cx="8.0985824"
+     inkscape:cy="9.4796503"
+     inkscape:cx="8.0322911"
      inkscape:zoom="45.254834"
      inkscape:pageshadow="2"
      inkscape:pageopacity="1"
@@ -52,7 +52,8 @@
      bordercolor="#666666"
      pagecolor="#8e8e8e"
      id="base"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#8e8e8e">
     <inkscape:grid
        type="xygrid"
        id="grid2992"
@@ -91,7 +92,7 @@
        height="13.999999"
        width="15"
        id="rect17861"
-       style="color:#000000;fill:none;stroke:#979796;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:none;stroke:#909195;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        ry="1.5"
        rx="1.5"
@@ -100,6 +101,6 @@
        height="12"
        width="13.000001"
        id="rect17861-6"
-       style="color:#000000;fill:none;stroke:#6d6d6b;stroke-width:0.99999994;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.8" />
+       style="color:#000000;fill:none;stroke:#6f7075;stroke-width:0.99999994;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.8" />
   </g>
 </svg>
