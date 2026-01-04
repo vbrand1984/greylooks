@@ -303,11 +303,11 @@ PanelApplet.wnck-applet .wnck-pager {
 
 /* calendar window */
 #MatePanelPopupWindow {
-	border-radius: 3px;
+    border-radius: 3px;
 }
 
 #MatePanelPopupWindow expander {
-	border-style: none;
+    border-style: none;
 }
 
 /* Weird, this sets the border color of the clockmap */
@@ -508,8 +508,8 @@ EggToolbarEditor.vertical scrolledwindow {
 /* broken text selection */
 .atril-window scrolledwindow.frame > widget:active,
 .atril-window scrolledwindow.frame > widget:selected {
-	background-color: @theme_selected_bg_color;
-	color: @theme_selected_fg_color;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 .lock-dialog {
@@ -561,7 +561,7 @@ MsdOsdWindow.background.osd {
 }
 
 MsdOsdWindow.background.osd .trough {
-	background-color: @osd_trough_bg;
+    background-color: @osd_trough_bg;
     border-radius: 3px;
     border-width: 1px;
     border-color: rgba(0,0,0,0.6);
@@ -571,7 +571,7 @@ MsdOsdWindow.background.osd .progressbar {
     border-width: 1px;
     border-radius: 3px;
     border-color: rgba(0,0,0,0.4);
-	background-color: alpha(shade(@theme_selected_bg_color, 1.0), 0.9);
+    background-color: alpha(shade(@theme_selected_bg_color, 1.0), 0.9);
 }
 
 /*****************

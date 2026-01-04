@@ -1,7 +1,7 @@
 
 # Please keep this gtkrc in sync with the other ones from Clearlooks based themes.
 
-gtk-color-scheme = "base_color:#f0ede7\nfg_color:#080808\ntooltip_fg_color:#080808\nselected_bg_color:#828388\nselected_fg_color:#f5f3ef\ntext_color:#080808\nbg_color:#dbd7d0\ntooltip_bg_color:#f3e5ab\nlink_color:#123955\nvisited_link_color:#005784"
+gtk-color-scheme = "base_color:#f0ede5\nfg_color:#030303\ntooltip_fg_color:#030303\nselected_bg_color:#858483\nselected_fg_color:#f5f3ef\ntext_color:#080808\nbg_color:#d9d6cf\ntooltip_bg_color:#eee0b1\nlink_color:#0e4d72\nvisited_link_color:#551b8c"
 
 style "default" {
 	xthickness = 1
@@ -51,32 +51,32 @@ style "default" {
 	####################
 	# Color Definitions
 	####################
-	bg[NORMAL]        = @bg_color
-	bg[PRELIGHT]      = shade (1.02, @bg_color)
-	bg[SELECTED]      = @selected_bg_color
-	bg[INSENSITIVE]   = @bg_color
-	bg[ACTIVE]        = shade (0.9, @bg_color)
+	bg[NORMAL]			= @bg_color
+	bg[PRELIGHT]		= shade (1.02, @bg_color)
+	bg[SELECTED]		= @selected_bg_color
+	bg[INSENSITIVE]		= @bg_color
+	bg[ACTIVE]			= shade (0.9, @bg_color)
 
-	fg[NORMAL]        = @fg_color
-	fg[PRELIGHT]      = @fg_color
-	fg[SELECTED]      = @selected_fg_color
-	fg[INSENSITIVE]   = darker (@bg_color)
-	fg[ACTIVE]        = @fg_color
+	fg[NORMAL]			= @fg_color
+	fg[PRELIGHT]		= @fg_color
+	fg[SELECTED]		= @selected_fg_color
+	fg[INSENSITIVE]		= darker (@bg_color)
+	fg[ACTIVE]			= @fg_color
 
-	text[NORMAL]      = @text_color
-	text[PRELIGHT]    = @text_color
-	text[SELECTED]    = @selected_fg_color
-	text[INSENSITIVE] = darker (@bg_color)
-	text[ACTIVE]      = @selected_fg_color
+	text[NORMAL]		= @text_color
+	text[PRELIGHT]		= @text_color
+	text[SELECTED]		= @selected_fg_color
+	text[INSENSITIVE]	= darker (@bg_color)
+	text[ACTIVE]		= @selected_fg_color
 
-	base[NORMAL]      = @base_color
-	base[PRELIGHT]    = shade (0.95, @bg_color)
-	base[SELECTED]    = @selected_bg_color
-	base[INSENSITIVE] = @bg_color
-	base[ACTIVE]      = shade (0.9, @selected_bg_color)
+	base[NORMAL]		= @base_color
+	base[PRELIGHT]		= shade (0.95, @bg_color)
+	base[SELECTED]		= @selected_bg_color
+	base[INSENSITIVE]	= @bg_color
+	base[ACTIVE]		= shade (0.9, @selected_bg_color)
 
 	engine "clearlooks" {
-		colorize_scrollbar = TRUE
+		colorize_scrollbar = FALSE
 		reliefstyle = 1
 		menubarstyle = 2
 		toolbarstyle = 1
@@ -166,16 +166,16 @@ style "vscrollbar" {
 
 style "notebook_bg" {
 
-	bg[NORMAL]        = shade (1.02, @bg_color)
+	bg[NORMAL]			= shade (1.02, @bg_color)
 }
 
 style "button" {
 	xthickness = 3
 	ythickness = 3
 
-	bg[NORMAL]        = shade (1.04, @bg_color)
-	bg[PRELIGHT]      = shade (1.06, @bg_color)
-	bg[ACTIVE]        = shade (0.85, @bg_color)
+	bg[NORMAL]			= shade (1.04, @bg_color)
+	bg[PRELIGHT]		= shade (1.06, @bg_color)
+	bg[ACTIVE]			= shade (0.85, @bg_color)
 }
 
 # The color is changed by the notebook_bg style, this style
@@ -213,7 +213,7 @@ style "menu" {
 	xthickness = 1
 	ythickness = 1
 
-	bg[NORMAL]        = shade (1.08, @bg_color)
+	bg[NORMAL]			= shade (1.08, @bg_color)
 
 	engine "clearlooks" {
 		radius = 0.0
@@ -224,7 +224,7 @@ style "menu_item" {
 	xthickness = 2
 	ythickness = 3
 
-	fg[PRELIGHT]      = @selected_fg_color
+	fg[PRELIGHT]		= @selected_fg_color
 }
 
 # This style is there to modify the separator menu items. The goals are:
@@ -242,7 +242,7 @@ style "separator_menu_item" {
 
 style "frame_title" {
 
-	fg[NORMAL]        = lighter (@fg_color)
+	fg[NORMAL]			= lighter (@fg_color)
 }
 
 style "treeview" {
@@ -257,7 +257,7 @@ style "progressbar" {
 	xthickness = 1
 	ythickness = 1
 
-	fg[PRELIGHT]      = @selected_fg_color
+	fg[PRELIGHT]		= @selected_fg_color
 
 	engine "clearlooks" {
 		# Explicitly set the radius for the progress bars inside menu items.
@@ -282,46 +282,46 @@ style "tooltips" {
 	xthickness = 4
 	ythickness = 4
 
-	bg[NORMAL]        = @tooltip_bg_color
-	fg[NORMAL]        = @tooltip_fg_color
+	bg[NORMAL]			= @tooltip_bg_color
+	fg[NORMAL]			= @tooltip_fg_color
 }
 
 # fix for caja
 
 style "caja-location" {
 
-	bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @bg_color)
+	bg[NORMAL]	= mix (0.60, shade (1.05, @bg_color), @bg_color)
 }
 widget "*.caja-extra-view-widget" style : highest "caja-location"
 
 # Wrokaroudn style for places where the text color is used instead of the fg color.
 style "text_is_fg_color_workaround" {
 
-	text[NORMAL]      = @fg_color
-	text[PRELIGHT]    = @fg_color
-	text[SELECTED]    = @selected_fg_color
-	text[ACTIVE]      = @fg_color
-	text[INSENSITIVE] = darker (@bg_color)
+	text[NORMAL]		= @fg_color
+	text[PRELIGHT]		= @fg_color
+	text[SELECTED]		= @selected_fg_color
+	text[ACTIVE]		= @fg_color
+	text[INSENSITIVE]	= darker (@bg_color)
 }
 
 # Workaround style for menus where the text color is used instead of the fg color.
 style "menuitem_text_is_fg_color_workaround" {
 
-	text[NORMAL]      = @fg_color
-	text[PRELIGHT]    = @selected_fg_color
-	text[SELECTED]    = @selected_fg_color
-	text[ACTIVE]      = @fg_color
-	text[INSENSITIVE] = darker (@bg_color)
+	text[NORMAL]		= @fg_color
+	text[PRELIGHT]		= @selected_fg_color
+	text[SELECTED]		= @selected_fg_color
+	text[ACTIVE]		= @fg_color
+	text[INSENSITIVE]	= darker (@bg_color)
 }
 
 # Workaround style for places where the fg color is used instead of the text color.
 style "fg_is_text_color_workaround" {
 
-	fg[NORMAL]        = @text_color
-	fg[PRELIGHT]      = @text_color
-	fg[SELECTED]      = @selected_fg_color
-	fg[ACTIVE]        = @selected_fg_color
-	fg[INSENSITIVE]   = darker (@bg_color)
+	fg[NORMAL]			= @text_color
+	fg[PRELIGHT]		= @text_color
+	fg[SELECTED]		= @selected_fg_color
+	fg[ACTIVE]			= @selected_fg_color
+	fg[INSENSITIVE]		= darker (@bg_color)
 }
 
 # Style to set the toolbar to use a flat style. This is because the "New" button in

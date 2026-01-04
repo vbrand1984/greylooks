@@ -1,4 +1,4 @@
-! vim: ft=ob3 fdm=marker
+! vim: fdm=marker ts=4 noet ft=ob3
 
 !!
 !! Greylooks theme for Openbox3 window manager
@@ -9,15 +9,12 @@
 !! and from the Bear2 theme.
 !! This product is distributed under the terms of the GPL v. 2.0 license:
 !! https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-!! Feel free, comrades!
 !!
 !! Check out the newest version of this theme:
 !! https://github.com/vbrand1984/greylooks-openbox
 !!
-!! Vim syntax plugin for openbox themes:
-!! https://github.com/vbrand1984/ob3-vim-syntax
+!! Last updated: 2025-07-24
 !!
-
 
 !! Menu and window label text justification
 *.text.justify: center
@@ -25,176 +22,194 @@
 !! {{{ General window settings
 
 !! Window border
-border.width:                                       1
-window.*.border.color:                              #736958
+border.width:									1
+window.active.border.color:						#656261
+window.inactive.border.color:					#7a7774
 
 !! Padding between window borders and insides
-window.client.padding.width:                        0
-window.client.padding.height:                       0
+window.client.padding.width:					0
+window.client.padding.height:					0
 
 !! Padding between window title elements
-padding.width:                                      4
-padding.height:                                     3
+padding.width:									4
+padding.height:									3
 
 !! Handle and grip
-window.handle.width:                                3
-window.*.handle.bg:                                 raised solid
-window.*.handle.bg.highlight:                       32
-window.*.handle.bg.shadow:                          8
-window.*.handle.bg.color:                           #dbd7d0
-window.*.grip.bg:                                   parentrelative
+window.handle.width:							3
+window.*.handle.bg:								raised solid
+window.*.handle.bg.highlight:					32
+window.*.handle.bg.shadow:						8
+window.*.handle.bg.color:						#d9d6cf
+window.*.grip.bg:								parentrelative
 
 !! }}}
 !! {{{ Active window title
 
-window.active.title.bg:                             flat gradient vertical
-window.active.title.bg.color:                       #ddd9d3
-window.active.title.bg.colorTo:                     #dbd7d0
-window.active.title.separator.color:                #dbd7d0
-window.active.client.color:                         #dbd7d0
-window.active.label.bg:                             parentrelative
-window.active.label.text.color:                     #1a1b1c
-window.active.label.text.font:                      shadow=y:shadowoffset=1:shadowtint=-70
+!! Title background
+window.active.title.bg:							raised gradient splitvertical
+window.active.title.bg.color.splitTo:			#949392
+window.active.title.bg.color:					#888786
+window.active.title.bg.colorTo:					#858483
+window.active.title.bg.colorTo.splitTo:			#807f7e
+window.active.title.bg.highlight:				64 
+window.active.title.bg.shadow:					32
+
+!! Separator color
+window.active.title.separator.color:			#70706f
+
+!! Label background and text
+window.*.label.bg:								parentrelative
+window.active.label.text.color:					#f0ede5
+window.active.label.text.font:					shadow=y:shadowoffset=1:shadowtint=70
 
 !! }}}
-!! {{{ Active window buttons
+!! {{{ Inactive window title
 
-!! Active window button background
-window.active.button.unpressed.bg:                  parentrelative
-window.active.button.pressed.bg:                    parentrelative
-window.active.button.disabled.bg:                   parentrelative
-window.active.button.hover.bg:                      flat solid  
-window.active.button.hover.bg.color:                #828388
-!! Active window buttons colors
-window.active.button.unpressed.image.color:         #1a1b1c
-window.active.button.hover.image.color:             #f0eee4
-window.active.button.pressed.image.color:           #828388
-window.active.button.disabled.image.color:          #9c9d9b
+!! Title background
+window.inactive.title.bg:						raised gradient vertical
+window.inactive.title.bg.color:					#e2dfd7
+window.inactive.title.bg.colorTo:				#c4c1ba
+window.inactive.title.bg.highlight:				8 
+window.inactive.title.bg.shadow:				16
 
-!! Active window toggled buttons background
-window.active.button.toggled.unpressed.bg:          parentrelative
-window.active.button.toggled.pressed.bg:            parentrelative
-window.active.button.toggled.hover.bg:              flat solid
-window.active.button.toggled.hover.bg.color:        #828388
-!! Active toggled window buttons colors
-window.active.button.toggled.unpressed.image.color: #1a1b1c
-window.active.button.toggled.hover.image.color:     #f0eee4
-window.active.button.toggled.pressed.image.color:   #828388
+!! Separator color
+window.inactive.title.separator.color:			#adaaa5
+
+!! Label text
+window.inactive.label.text.color:				#5b5a57
+window.inactive.label.text.font:				shadow=y:shadowoffset=1:shadowtint=-50
 
 !! }}}
-!! {{{ Inactive window settings
+!! {{{ Window buttons
 
-!! Inactive window title
-window.inactive.title.bg:                           flat solid
-window.inactive.title.bg.color:                     #dbd7d0
-window.inactive.title.separator.color:              #dbd7d0
-window.inactive.label.bg:                           parentrelative
-window.inactive.label.text.color:                   #7e7d78
-window.inactive.label.text.font:                    shadow=y:shadowoffset=1:shadowtint=-50
+!! Unpressed
+window.*.button.*.unpressed.bg:					parentrelative
+window.active.button.*.unpressed.image.color:	#f5f3ef
+window.inactive.button.*.unpressed.image.color:	#71706e
 
-!! Inactive window buttons
-window.inactive.button.*.bg:                        parentrelative
-window.inactive.button.*.image.color:               #7e7d78
-window.inactive.button.disabled.image.color:        #9c9d9b
+!! Hover: Background
+window.*.button.*.hover.bg:						flat solid
+
+!! Hover: Active window
+window.active.button.*.hover.bg.color:			#d9d6cf
+window.active.button.*.hover.image.color:		#858483
+
+!! Hover: Inactive window
+window.inactive.button.*.hover.bg.color:		#858483
+window.inactive.button.*.hover.image.color:		#d9d6cf
+
+!! Pressed
+window.active.button.*.pressed.bg:				parentrelative
+window.active.button.*.pressed.image.color:		#d9d6cf
+
+!! Disabled buttons
+window.*.button.disabled.bg:					parentrelative
+window.*.button.disabled.image.color:			#9c9d9b
 
 !! }}}
 
 !! {{{ Menus
 
 !! Geometry
-menu.border.width:                                  1
-menu.overlap.x:                                     -3
-menu.overlap.y:                                     0
-menu.separator.padding.width:                       5
-menu.separator.padding.height:                      5
+menu.border.width:								1
+menu.overlap.x:									-3
+menu.overlap.y:									0
+menu.separator.padding.width:					5
+menu.separator.padding.height:					5
 
 !! Border and separator colors
-menu.border.color:                                  #89827c
-menu.separator.color:                               #959087
+menu.border.color:								#8b8881
+menu.separator.color:							#95928c
 
 !! Menu title
-menu.title.bg:                                      flat solid
-menu.title.bg.color:                                #cbc5bb
-menu.title.text.color:                              #1a1b1c
-menu.title.text.font:                               shadow=y:shadowoffset=1:shadowtint=-15
+menu.title.bg:									flat solid
+menu.title.bg.color:							#c3c0b8
+menu.title.text.color:							#1d2021
+menu.title.text.font:							shadow=y:shadowoffset=1:shadowtint=-15
 
 !! Inactive items
-menu.items.bg:                                      flat solid
-menu.items.bg.color:                                #e3e0da
-menu.items.text.color:                              #080808
-menu.bullet.image.color:                            #080808
+menu.items.bg:									flat solid
+menu.items.bg.color:							#e1dfd9
+menu.items.text.color:							#030303
+menu.bullet.image.color:						#252321
 
 !! Active item
-menu.items.active.bg:                               flat gradient vertical border
-menu.items.active.bg.color:                         #828388
-menu.items.active.bg.colorTo:                       #737478
-menu.items.active.bg.border.color:                  #4c4c4e
-menu.items.active.text.color:                       #f5f3ef
-menu.bullet.selected.image.color:                   #f5f3ef
+menu.items.active.bg:							flat gradient splitvertical border
+menu.items.active.bg.color.splitTo:				#858483
+menu.items.active.bg.color:						#7f7e7d
+menu.items.active.bg.colorTo:					#7b7a7a
+menu.items.active.bg.colorTo.splitTo:			#757474
+menu.items.active.bg.border.color:				#4d4c4c
+menu.items.active.text.color:					#f5f3ef
+menu.bullet.selected.image.color:				#f0ede5
 
 !! Disabled items
-menu.items.disabled.text.color:                     #8b8589
-menu.items.active.disabled.text.color:              #adaeb0
+menu.items.disabled.text.color:					#8b8589
+menu.items.active.disabled.text.color:			#adaeb0
 
 !! }}}
 
 !! {{{ General OSD settings
 
+!! Border color
+osd.border.color:								#7e7d78
+
 !! OSD background
-osd.bg:                                             flat gradient vertical
-osd.bg.color:                                       #dbd7d0
-osd.bg.colorTo:                                     #cbc5bb
-osd.border.color:                                   #75787b
+osd.bg:											flat gradient vertical
+osd.bg.color:									#d9d6cf
+osd.bg.colorTo:									#cbc8c1
 
-!! OSD labels background
-osd.*.label.bg:                                     parentrelative
+!! Label background
+osd.*.label.bg:									parentrelative
 
-!! OSD active label
-osd.active.label.text.color:                        #252321
-osd.active.label.text.font:                         shadow=y:shadowoffset=1:shadowtint=-50
+!! Text: active label
+osd.active.label.text.color:					#252321
+osd.active.label.text.font:						shadow=y:shadowoffset=1:shadowtint=-50
 
-!! OSD inactive label
-osd.inactive.label.text.color:                      #7e7d78
-osd.inactive.label.text.font:                       shadow=y:shadowoffset=1:shadowtint=-40
+!! Text: inactive label
+osd.inactive.label.text.color:					#7e7d78
+osd.inactive.label.text.font:					shadow=y:shadowoffset=1:shadowtint=-40
 
 !! }}}
 !! {{{ OSD buttons
 
+!! Box color
+osd.button.*.box.color:							#858483
+
 !! Text
-osd.button.*.box.color:                             #7c7e82
-osd.button.*.text.color:                            #282932
-osd.button.*.text.font:                             shadow=n
+osd.button.*.text.color:						#1d2021
+osd.button.*.text.font:							shadow=n
 
-!! Button highlights
-osd.button.*.bg.highlight:                          16
-osd.button.*.bg.shadow:                             64
+!! Background: unpressed button & focused button
+osd.button.*.bg:								raised gradient splitvertical bevel2
+osd.button.*.bg.color.splitTo:					#e2dfd8
+osd.button.*.bg.color:							#cfccc6
+osd.button.*.bg.colorTo:						#cbc8c1
+osd.button.*.bg.colorTo.splitTo:				#c4c1bb
+osd.button.*.bg.highlight:						28
+osd.button.*.bg.shadow:							80
 
-!! Unpressed button
-osd.button.unpressed.bg:                            raised gradient vertical 
-osd.button.unpressed.bg.color:                      #e2e1dd
-osd.button.unpressed.bg.colorTo:                    #b9b5ad
-osd.button.unpressed.bg.border.color:               #918e8c
-
-!! Focused button
-osd.button.focused.bg:                              raised gradient vertical
-osd.button.focused.bg.color:                        #e2e1dd
-osd.button.focused.bg.colorTo:                      #b9b5ad
-
-!! Pressed button
-osd.button.pressed.bg:                              sunken gradient vertical
-osd.button.pressed.bg.color:                        #b4b0a4
-osd.button.pressed.bg.colorTo:                      #c3beb4
+!! Background: pressed button
+osd.button.pressed.bg:							sunken gradient splitvertical bevel2
+osd.button.pressed.bg.color.splitTo:			#b9b5ae
+osd.button.pressed.bg.color:					#b2aea7
+osd.button.pressed.bg.colorTo:					#aeaaa2
+osd.button.pressed.bg.colorTo.splitTo:			#a5a199
+osd.button.pressed.bg.highlight:				80
 
 !! }}}
 !! {{{ Workspace switching dialog
 
 !! Highlighted background
-osd.hilight.bg:                                     flat gradient vertical
-osd.hilight.bg.color:                               #828388
-osd.hilight.bg.colorTo:                             #737478
+osd.hilight.bg:									flat gradient splitvertical
+osd.hilight.bg.color.splitTo:					#949392
+osd.hilight.bg.color:							#888786
+osd.hilight.bg.colorTo:							#858483
+osd.hilight.bg.colorTo.splitTo:					#807f7e
 
 !! Unhighlighted background
-osd.unhilight.bg:                                   flat solid
-osd.unhilight.bg.color:                             #e8e6e2
+osd.unhilight.bg:								flat gradient vertical
+osd.unhilight.bg.color:							#e7e4de
+osd.unhilight.bg.colorTo:						#e4e0da
 
 !! }}}

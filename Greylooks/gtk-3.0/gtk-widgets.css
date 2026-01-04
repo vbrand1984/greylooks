@@ -1,6 +1,6 @@
 * {
     padding: 0px;
-	margin: 0px;
+    margin: 0px;
     background-clip: padding-box;
     -GtkToolButton-icon-spacing: 4px;
     -GtkTextView-error-underline-color: @error_color;
@@ -45,7 +45,7 @@ window {
 
 /* Fix for applications that have issues finding a default monospace font */
 .monospace {
-  font-family: Monospace;
+    font-family: Monospace;
 }
 
 image,
@@ -337,11 +337,11 @@ entry:disabled {
 }
 
 entry image.left {
-	padding-right: 6px;
+    padding-right: 6px;
 }
 
 entry image.right {
-	padding-left: 6px;
+    padding-left: 6px;
 }
 
 /*******************
@@ -643,7 +643,7 @@ scale.horizontal slider {
 scale.vertical.fine-tune slider,
 scale.horizontal.fine-tune slider,
 scale.horizontal.marks-after.fine-tune slider {
-	background-size: 80%;
+    background-size: 80%;
 }
 
 scale.horizontal.color.marks-before trough {
@@ -691,12 +691,12 @@ scale progressbar {
 
 frame > border,
 .frame {
-	box-shadow: none;
-	margin: 0;
-	padding: 0;
-	border-radius: 3px;
-	border: 1px solid @border_color;
-/*	background-color: @notebook_bg_color;*/
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    border: 1px solid @border_color;
+/*  background-color: @notebook_bg_color;*/
 }
 
 .frame.flat,
@@ -896,7 +896,7 @@ button:disabled image,
 .button:disabled image,
 button:active:disabled image,
 .button:active:disabled image{
-	 opacity: 0.4;
+     opacity: 0.4;
 }
 
 /* We may want a background for focused buttons, but in the meantime let's remove it too */
@@ -1440,55 +1440,55 @@ stackswitcher > button > label,
 headerbar stackswitcher > button.titlebutton > label,
 headerbar.titlebar stackswitcher > button.titlebutton > label,
 calendar.header stackswitcher > button.titlebutton > label {
-	padding-left: 6px;
-	padding-right: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 stackswitcher > button > image,
 headerbar stackswitcher > button.titlebutton > image,
 headerbar.titlebar stackswitcher > button.titlebutton > image,
 calendar.header stackswitcher > button.titlebutton > image {
-	padding-left: 6px;
-	padding-right: 6px;
-	padding-top: 3px;
-	padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 stackswitcher > button.text-button {
-	padding: 5px 10px 6px;
+    padding: 5px 10px 6px;
 }
 
 stackswitcher > button.image-button,
 headerbar stackswitcher > button.titlebutton,
 headerbar.titlebar stackswitcher > button.titlebutton,
 calendar.header stackswitcher > button.titlebutton {
-	padding: 5px 2px;
+    padding: 5px 2px;
 }
 
 stackswitcher > button.needs-attention > label,
 stackswitcher > button.needs-attention > image {
-	background-color: @theme_bg_color; /* FIXME: ? */
-	background-size: 6px 6px, 6px 6px;
-	background-repeat: no-repeat;
-	background-position: right 3px, right 4px;
+    background-color: @theme_bg_color; /* FIXME: ? */
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    background-position: right 3px, right 4px;
 }
 
 stackswitcher > button.needs-attention > label:backdrop,
 stackswitcher > button.needs-attention > image:backdrop {
-	background-size: 6px 6px, 0 0;
+    background-size: 6px 6px, 0 0;
 }
 
 stackswitcher > button.needs-attention > label:dir(rtl),
 stackswitcher > button.needs-attention > image:dir(rtl) {
-	background-position: left 3px, left 4px;
+    background-position: left 3px, left 4px;
 }
 
 stackswitcher > button.needs-attention:active > label,
 stackswitcher > button.needs-attention:active > image,
 stackswitcher > button.needs-attention:checked > label,
 stackswitcher > button.needs-attention:checked > image {
-	animation: none;
-	background-image: none;
+    animation: none;
+    background-image: none;
 }
 
 stackswitcher  > button:dir(ltr).text-button.radio,
@@ -2420,7 +2420,7 @@ menuitem:disabled image,
 .menuitem:disabled image,
 menuitem:active:disabled image,
 .menuitem:active:disabled image{
-	 opacity: 0.5;
+     opacity: 0.5;
 }
 
 
@@ -2675,8 +2675,8 @@ checkbutton:selected:focus {
 
 checkbutton.text-button,
 radiobutton.text-button {
-	padding: 1px 2px 4px;
-	outline-offset: 0;
+    padding: 1px 2px 4px;
+    outline-offset: 0;
 }
 
 /************
@@ -3217,7 +3217,7 @@ progressbar .osd trough {
 .osd progressbar,
 progressbar .osd {
     border-style: none;
-	background-color: alpha(shade(@theme_selected_bg_color, 1.0), 0.9);
+    background-color: alpha(shade(@theme_selected_bg_color, 1.0), 0.9);
     background-image: none;
     border-radius: 0;
 }
@@ -3286,15 +3286,15 @@ assistant .sidebar {
  *************/
 
 switch {
-	background-color: transparent;
+    background-color: transparent;
     color: @switch_color;
 }
 
 scale progressbar,
 switch:checked {
-	background-color: transparent;
-	color: @switch_trough_active_color;
-	text-shadow: 1px 1px alpha(black, 0.2);
+    background-color: transparent;
+    color: @switch_trough_active_color;
+    text-shadow: 1px 1px alpha(black, 0.2);
 }
 
 switch:checked,
@@ -3396,17 +3396,17 @@ label selection:hover {
 
 label:disabled:selected,
 label selection:disabled {
-	color: @insensitive_fg_color;
+    color: @insensitive_fg_color;
 }
 
 label:backdrop:selected,
 label selection:backdrop {
-	color: @theme_fg_color;
+    color: @theme_fg_color;
 }
 
 label:backdrop:disabled:selected,
 label selection:backdrop:disabled {
-	color: @insensitive_fg_color;
+    color: @insensitive_fg_color;
 }
 
 /***************
@@ -3427,7 +3427,7 @@ treeview.dnd {
 }
 
 treeview.view:selected:focus {
-	outline-color: mix(@theme_selected_fg_color, @theme_selected_bg_color, 0.30);
+    outline-color: mix(@theme_selected_fg_color, @theme_selected_bg_color, 0.30);
 }
 
 /* column-headers */
@@ -3921,18 +3921,18 @@ popover separator {
 
 /* ie. colorchooser */
 .popover.osd {
-	background-image: none;
-	background-color: alpha(shade(#3D3E40, 0.85), 0.35);
-	border: 1px solid black;
+    background-image: none;
+    background-color: alpha(shade(#3D3E40, 0.85), 0.35);
+    border: 1px solid black;
     border-radius: 2px;
-	box-shadow: none;
-	color: @theme_base_color;
+    box-shadow: none;
+    color: @theme_base_color;
 }
 
 .popover.osd spinbutton,
 .popover.osd spinbutton entry {
     background: transparent;
-	color: @theme_base_color;
+    color: @theme_base_color;
 }
 
 .popover.osd button {
@@ -4076,8 +4076,8 @@ stack .linked.vertical entry {
 
 .app-notification {
   padding: 10px;
-  color: #dbdbdb;
-  background-color: #404040;
+  color: @theme_fg_color;
+  background-color: @theme_base_color;
   background-clip: border-box;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
@@ -4086,19 +4086,19 @@ stack .linked.vertical entry {
   .app-notification border {
     border: none; }
   .app-notification button {
-    color: #dbdbdb;
+    color: @theme_text_color;
     outline-color: rgba(219, 219, 219, 0.3);
     border-color: rgba(33, 33, 33, 0.4);
     background-color: rgba(120, 120, 120, 0.4); }
     .app-notification button.flat {
       border-color: rgba(146, 179, 114, 0); }
     .app-notification button:hover {
-      color: #dbdbdb;
+      color: @theme_text_color;
       outline-color: rgba(219, 219, 219, 0.3);
       border-color: rgba(33, 33, 33, 0.4);
       background-color: rgba(138, 138, 138, 0.5); }
     .app-notification button:active, .app-notification button:checked {
-      color: #dbdbdb;
+      color: @theme_fg_color;
       outline-color: rgba(219, 219, 219, 0.3);
       border-color: rgba(33, 33, 33, 0.4);
       background-color: rgba(0, 0, 0, 0.15);
@@ -4108,128 +4108,6 @@ stack .linked.vertical entry {
       border-color: rgba(33, 33, 33, 0.4);
       background-color: rgba(120, 120, 120, 0.25); }
 
-/*
-.app-notification,
-.app-notification.frame {
-    color: @theme_fg_color;
-    padding: 10px;
-    border-style: none;
-    border-radius: 0 0 4px 4px;
-    background-color: rgba(102, 153, 204, 0.7);
-    background-image: linear-gradient(to bottom,
-                                      rgba(0, 0, 0, 0.2),
-                                      transparent 2px);
-    background-clip: padding-box;
-}
-
-.app-notification:backdrop,
-.app-notification.frame:backdrop {
-    background-image: none;
-}
-
-.app-notification button,
-.app-notification headerbar button.titlebutton,
-headerbar .app-notification button.titlebutton,
-.app-notification .titlebar button.titlebutton,
-.titlebar .app-notification button.titlebutton,
-.app-notification calendar.header button.titlebutton,
-calendar.header .app-notification button.titlebutton,
-.app-notification.frame button {
-    color: @theme_fg_color;
-    border-color: rgba(75, 89, 112, 0.7);
-    background-image: linear-gradient(to bottom,
-                                      rgba(102, 153, 204, 0.7),
-                                      rgba(102, 153, 204, 0.7));
-    background-clip: padding-box;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-    text-shadow: none;
-    -gtk-icon-shadow: 0 1px black;
-    outline-color: rgba(238, 238, 236, 0.3);
-    border-radius: 3px;
-    padding: 0 0px 2px 0px;
-}
-
-.app-notification button.flat,
-.app-notification headerbar button.titlebutton,
-headerbar .app-notification button.titlebutton,
-.app-notification .titlebar button.titlebutton,
-.titlebar .app-notification button.titlebutton,
-.app-notification calendar.header button.titlebutton,
-calendar.header .app-notification button.titlebutton,
-.app-notification.frame button.flat,
-.app-notification.frame headerbar button.titlebutton,
-headerbar .app-notification.frame button.titlebutton,
-.app-notification.frame .titlebar button.titlebutton,
-.titlebar .app-notification.frame button.titlebutton,
-.app-notification.frame calendar.header button.titlebutton,
-calendar.header .app-notification.frame button.titlebutton {
-    -gtk-icon-shadow: 0 1px black;
-    text-shadow: 0 1px black;
-}
-
-.app-notification button:hover,
-.app-notification.frame button:hover {
-    color: white;
-    border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom,
-                                      rgba(79, 119, 158, 0.7),
-                                      rgba(79, 119, 158, 0.7));
-    background-clip: padding-box;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-    text-shadow: none;
-    -gtk-icon-shadow: 0 1px black;
-    outline-color: rgba(238, 238, 236, 0.3);
-    border-radius: 3px;
-}
-
-.app-notification button:checked,
-.app-notification button:backdrop:checked,
-.app-notification.frame button:checked,
-.app-notification.frame button:backdrop:checked {
-    color: white;
-    border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom,
-                                      rgba(65, 106, 175, 0.7),
-                                      rgba(65, 106, 175, 0.7));
-    background-clip: padding-box;
-    box-shadow: none;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    outline-color: rgba(238, 238, 236, 0.3);
-    border-radius: 3px;
-}
-
-.app-notification button:disabled,
-.app-notification button:backdrop:disabled,
-.app-notification.frame button:disabled,
-.app-notification.frame button:backdrop:disabled {
-    color: #878989;
-    border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom,
-                                      rgba(52, 57, 57, 0.5),
-                                      rgba(52, 57, 57, 0.5));
-    background-clip: padding-box;
-    box-shadow: none;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    border-radius: 3px;
-    padding: 0px;
-}
-
-.app-notification button:backdrop,
-.app-notification.frame button:backdrop {
-    color: #eeeeec;
-    border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom,
-                                      rgba(102, 153, 204, 0.7),
-                                      rgba(102, 153, 204, 0.7));
-    background-clip: padding-box;
-    box-shadow: none;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    border-radius: 3px;
-    padding: 0px;
-}*/
 
 /* hyperlinks */
 /* ie. yelp */
@@ -4324,7 +4202,7 @@ levelbar trough {
     border-radius: 3px;
     padding: 3px;
     background-color: @theme_base_color;
-/*	background-image: none;*/
+/*  background-image: none;*/
     border: 1px solid @progressbar_border_color;
 }
 
@@ -4366,6 +4244,6 @@ levelbar block.empty {
 /*    background-image: linear-gradient(to bottom,
                       @trough_gradient_a,
                       @trough_gradient_b 4px);*/
-	background-image: none;
+    background-image: none;
     background-color: @theme_bg_color;
 }

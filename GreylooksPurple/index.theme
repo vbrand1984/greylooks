@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=GreylooksPurple
+Comment=Port of TraditionalOk
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=GreylooksPurple
+MetacityTheme=GreylooksPurple
+IconTheme=Papirus-Light
+CursorTheme=DMZ-White
+CursorSize=24
+ButtonLayout=:minimize,maximize,close
