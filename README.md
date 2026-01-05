@@ -9,6 +9,10 @@ The themes are based on good ol' Clearlooks, Clearlooks-Phenix and TraditionalOk
 ## Openbox Themes
 ![Screenshot: Greylooks Openbox theme](https://raw.githubusercontent.com/vbrand1984/greylooks-openbox/refs/heads/assets/greylooks-openbox.png "Screenshot: Greylooks Openbox theme")
 
+## Related links
+* [Standalone Greylooks Openbox themes pack](https://github.com/vbrand1984/greylooks-openbox).
+* [Standalone Flatlooks Openbox themes pack](https://github.com/vbrand1984/flatlooks-openbox): Greylooks themes with flat (non-coloured) window titlebars.
+
 ## Usage
 Just install the theme directories into your `/usr/share/themes` (for systemwide installation) or `~/.local/share/themes` (for local install) directory.
 In order for the GTK2 themes to be working, it is necessary to install the `gtk-engines` or `gtk2-engines` package (depending on the distribution).
