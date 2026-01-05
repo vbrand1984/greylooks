@@ -7,7 +7,7 @@ The themes are based on good ol' Clearlooks, Clearlooks-Phenix and TraditionalOk
 ![Greylooks GTK3 Themes](../assets/screenshots/greylooks-gtk3.png?raw=true "Greylooks GTK3 Themes")
 
 ## Openbox Themes
-![Screenshot: Greylooks Openbox theme](../assets/screenshots/greylooks-openbox.png?raw=true "Screenshot: Greylooks Openbox theme")
+![Screenshot: Greylooks Openbox theme](https://raw.githubusercontent.com/vbrand1984/greylooks-openbox/refs/heads/assets/greylooks-openbox.png "Screenshot: Greylooks Openbox theme")
 
 ## Usage
 Just install the theme directories into your `/usr/share/themes` (for systemwide installation) or `~/.local/share/themes` (for local install) directory.
