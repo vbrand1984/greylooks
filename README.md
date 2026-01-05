@@ -6,48 +6,6 @@ The themes are based on good ol' Clearlooks, Clearlooks-Phenix and TraditionalOk
 ## GTK3 Themes
 ![Greylooks GTK3 Themes](../assets/screenshots/greylooks-gtk3.png?raw=true "Greylooks GTK3 Themes")
 
-### Detailed Screenshots for the GTK3 Themes
-
-<details>
-  <summary>Greylooks</summary>
-  
-  ![Greylooks: gtk3-widget-factory, page 1](../assets/screenshots/greylooks-gtk-page1.png?raw=true "Greylooks: gtk3-widget-factory, page 1")
-
-  ![Greylooks: gtk3-widget-factory, page 2](../assets/screenshots/greylooks-gtk-page2.png?raw=true "Greylooks: gtk3-widget-factory, page 2")
-
-  ![Greylooks: gtk3-widget-factory, page 3](../assets/screenshots/greylooks-gtk-page3.png?raw=true "Greylooks: gtk3-widget-factory, page 3")
-</details>
-
-<details>
-  <summary>GreylooksHuman</summary>
-  
-  ![GreylooksHuman: gtk3-widget-factory, page 1](../assets/screenshots/greylookshuman-gtk-page1.png?raw=true "GreylooksHuman: gtk3-widget-factory, page 1")
-
-  ![GreylooksHuman: gtk3-widget-factory, page 2](../assets/screenshots/greylookshuman-gtk-page2.png?raw=true "GreylooksHuman: gtk3-widget-factory, page 2")
-
-  ![GreylooksHuman: gtk3-widget-factory, page 3](../assets/screenshots/greylookshuman-gtk-page3.png?raw=true "GreylooksHuman: gtk3-widget-factory, page 3")
-</details>
-
-<details>
-  <summary>GreylooksGreen</summary>
-  
-  ![GreylooksGreen: gtk3-widget-factory, page 1](../assets/screenshots/greylooksgreen-gtk-page1.png?raw=true "GreylooksGreen: gtk3-widget-factory, page 1")
-
-  ![GreylooksGreen: gtk3-widget-factory, page 2](../assets/screenshots/greylooksgreen-gtk-page2.png?raw=true "GreylooksGreen: gtk3-widget-factory, page 2")
-
-  ![GreylooksGreen: gtk3-widget-factory, page 3](../assets/screenshots/greylooksgreen-gtk-page3.png?raw=true "GreylooksGreen: gtk3-widget-factory, page 3")
-</details>
-
-<details>
-  <summary>GreylooksOk</summary>
-  
-  ![GreylooksOk: gtk3-widget-factory, page 1](../assets/screenshots/greylooksok-gtk-page1.png?raw=true "GreylooksOk: gtk3-widget-factory, page 1")
-
-  ![GreylooksOk: gtk3-widget-factory, page 2](../assets/screenshots/greylooksok-gtk-page2.png?raw=true "GreylooksOk: gtk3-widget-factory, page 2")
-
-  ![GreylooksOk: gtk3-widget-factory, page 3](../assets/screenshots/greylooksok-gtk-page3.png?raw=true "GreylooksOk: gtk3-widget-factory, page 3")
-</details>
-
 ## Openbox Themes
 ![Screenshot: Greylooks Openbox theme](../assets/screenshots/greylooks-openbox.png?raw=true "Screenshot: Greylooks Openbox theme")
 
